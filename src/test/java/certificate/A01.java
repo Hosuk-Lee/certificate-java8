@@ -143,5 +143,50 @@ public class A01 {
         두개함수에 throws 처리
      */
 
+    @Test
+    public void test07() throws IOException {
+        X07 x1 = new X07();
+        X07 x2 = new X07();
+        x1.i=3;
+        x1.j=4;
+        x2.i=5;
+        x2.j=6;
+        System.out.println(
+                x1.i + "," + x1.j + ","
+              + x2.i + "," + x2.j
+        );
+    }
+    static class X07 {
+        static int i;
+        int j;
+    }
+
+    @Test
+    public void test08() throws IOException {
+        String[][] arr = { {"A","B","C"}, {"D","E"}};
+        for ( int i=0; i<arr.length; i++) {
+//            System.out.print("arr.length : [" + arr.length + "]  - ");
+            for (int j=0; j<arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+                if ( arr[i][j].equals("B")) {
+                    continue;
+                }
+            }
+            continue;
+        }
+    }
+
+    @Test
+    public void test11() throws IOException {
+        String[] strs = {"A", "B"};
+        int idx =0;
+        for (String s: strs) {
+            strs[idx].concat(" element " + idx);
+            idx++;
+        }
+        for (idx = 0 ; idx<strs.length; idx++){
+            System.out.println(strs[idx]);
+        }
+    }
 
 }
