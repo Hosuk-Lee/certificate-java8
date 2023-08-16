@@ -1,5 +1,6 @@
 package certificate;
 
+import java.time.LocalDateTime;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -188,5 +189,40 @@ public class A01 {
             System.out.println(strs[idx]);
         }
     }
+
+    @Test
+    public void test12(){
+        sum12(1,2);
+        sum12(20.0,10.0);
+    }
+    void sum12(int a, int b) {
+        System.out.println("int");
+    }
+    void sum12(Integer a, Integer b) {
+        System.out.println("integer");
+    }
+    void sum12(double a, double b) {
+        System.out.println("double");
+    }
+    void sum12(float a, float b) {
+        System.out.println("float");
+    }
+
+    @Test
+    public void test14() {
+        String str = "Sweet Sweet";
+        String str2 = str.trim().charAt(6) + "" + str.indexOf("Sw");
+        System.out.println(str2);
+    }
+
+    @Test
+    public void test16() {
+        LocalDateTime dt = LocalDateTime.of(2014,7,31,1,1);
+        LocalDateTime dt2 = dt.plusDays(30);
+        dt.plusMonths(1);
+        System.out.println(dt.format(DateTimeFormatter.ISO_DATE));
+        System.out.println(dt2.format(DateTimeFormatter.ISO_DATE));
+    }
+
 
 }

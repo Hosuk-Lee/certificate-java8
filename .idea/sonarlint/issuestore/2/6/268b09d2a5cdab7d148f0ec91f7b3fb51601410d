@@ -1,0 +1,10 @@
+
+Q
+java:S1854"6Remove this useless assignment to local variable "x2".(‘ş±ÿùÿÿÿÿ
+B
+java:S1481"'Remove this unused "x2" local variable.(‘ş±ÿùÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(—³µì
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+K
+java:S2209"5Change this instance-reference to a static reference.(¬¡À
